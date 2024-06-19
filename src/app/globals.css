@@ -7,12 +7,67 @@
   font-weight: 400;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
 
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.button {
+  color-scheme: light dark;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  --rm-connect-btn-width: 160px;
+  --rm-connect-btn-font-family: inherit;
+  --rm-connect-btn-font-size: 0.95rem;
+  --rm-connect-btn-font-weight: 500;
+  --rm-connect-btn-border-radius: 0.4rem;
+  --rm-connect-btn-padding: 11px 13px;
+  --rm-connect-btn-bg-color: #0d6efd;
+  --rm-connect-btn-bg-color-hover: #0d6efde6;
+  --rm-connect-btn-color: #fff;
+  display: block;
+  user-select: none;
+  font-weight: var(--rm-connect-btn-font-weight, 500);
+  color: var(--rm-title-color, #fff);
+  width: var(--rm-connect-btn-width, 134px);
+  background-color: var(--rm-connect-btn-bg-color, #0d6efd);
+  font-family: var(--rm-connect-btn-font-family, inherit);
+  font-size: var(--rm-connect-btn-font-size, 0.95rem);
+  border-radius: var(--rm-connect-btn-border-radius, 0.4rem);
+  padding: var(--rm-connect-btn-padding, 11px 13px);
+  cursor: pointer;
+  text-align: center;
+  border: 0;
+  transition: cubic-bezier(0.25, 0.1, 0.25, 1) 250ms all;
+}
+
+.info {
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: #f9f9f9;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  color: #181818;
+}
+
+main {
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
 @media (prefers-color-scheme: light) {
   :root {
     background-color: #f8f8f8;

@@ -4,6 +4,8 @@ import { createRoninModal } from '@roninbuilders/modal-wagmi'
 export const config = createRoninModal({
   projectId: "b28d4116d7aad56368379ac594360b72",
   chain: ronin,
+  // ssr: true,
+  darkMode: true,
   metadata: {
     name: 'My Website',
     description: 'My website description',

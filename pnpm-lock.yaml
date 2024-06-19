@@ -7,6 +7,9 @@ dependencies:
   '@tanstack/react-query':
     specifier: 5.0.5
     version: 5.0.5(react-dom@18.3.1)(react-native@0.74.2)(react@18.3.1)
+  '@wagmi/core':
+    specifier: ^2.11.2
+    version: 2.11.2(@types/react@18.3.3)(bufferutil@4.0.8)(react@18.3.1)(typescript@5.4.5)(utf-8-validate@6.0.4)(viem@2.15.1)
   next:
     specifier: 13.5.3
     version: 13.5.3(@babel/core@7.24.7)(react-dom@18.3.1)(react@18.3.1)
@@ -2470,6 +2473,7 @@ packages:
     dependencies:
       is-glob: 4.0.3
       micromatch: 4.0.7
+      napi-wasm: 1.1.0
     dev: false
     bundledDependencies:
       - napi-wasm
@@ -6328,6 +6332,10 @@ packages:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+    dev: false
+
+  /napi-wasm@1.1.0:
+    resolution: {integrity: sha512-lHwIAJbmLSjF9VDRm9GoVOy9AGp3aIvkjv+Kvz9h16QR3uSVYH78PNQUnT2U4X53mhlnV2M7wrhibQ3GHicDmg==}
     dev: false
 
   /negotiator@0.6.3:
