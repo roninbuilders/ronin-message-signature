@@ -1,18 +1,14 @@
-import { http, createConfig } from 'wagmi'
-import { mainnet, sepolia } from 'wagmi/chains'
-import { coinbaseWallet, injected, walletConnect } from 'wagmi/connectors'
+import { ronin, saigon } from 'viem/chains'
+import { createRoninModal } from '@roninbuilders/modal-wagmi'
 
-export const config = createConfig({
-  chains: [mainnet, sepolia],
-  connectors: [
-    injected(),
-    coinbaseWallet({ appName: 'Create Wagmi' }),
-    walletConnect({ projectId: process.env.NEXT_PUBLIC_WC_PROJECT_ID }),
-  ],
-  ssr: true,
-  transports: {
-    [mainnet.id]: http(),
-    [sepolia.id]: http(),
+export const config = createRoninModal({
+  projectId: "b28d4116d7aad56368379ac594360b72",
+  chain: ronin,
+  metadata: {
+    name: 'My Website',
+    description: 'My website description',
+    url: 'https://mywebsite.com',
+    icons: ['https://mywebsite.com/icon']
   },
 })
 
